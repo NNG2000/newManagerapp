@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#572121"
+    android:foregroundTint="#572727"
+    app:flow_firstHorizontalStyle="spread_inside"
+    app:flow_firstVerticalStyle="spread_inside"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/nameApp"
+        android:layout_width="300dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:accessibilityLiveRegion="polite"
+        android:background="#6A642A"
+        android:text="NBA PLAY-OFF MANAGER"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#130201"
+        android:textColorHint="#D3C3C3" />
+
+    <ImageButton
+        android:id="@+id/nba1"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="83dp"
+        android:onClick="OnSetAvatarButton"
+        app:srcCompat="@drawable/playoff" />
+
+    <TextView
+        android:id="@+id/intruction"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="313dp"
+        android:text="click on the image to change your Avatar team's"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/teamName"
+        android:layout_width="300dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="366dp"
+        android:accessibilityLiveRegion="polite"
+        android:background="#834F4F"
+        android:text="Your TEAM NAME'S"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#130201"
+        android:textColorHint="#D3C3C3" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="334dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="438dp"
+        android:hint="Enter the name of your team here"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#130202" />
+
+    <TextView
+        android:id="@+id/adresse"
+        android:layout_width="306dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="527dp"
+        android:layout_marginEnd="55dp"
+        android:accessibilityLiveRegion="polite"
+        android:background="#834F4F"
+        android:text="Your location"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#1B0202" />
+
+    <EditText
+        android:id="@+id/editadresse"
+        android:layout_width="334dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="587dp"
+        android:hint="Enter your adresse here"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#150101" />
+
+    <Button
+        android:id="@+id/btngoogle"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="#D3DBE1"
+        android:onClick="OnOpenInGoogleMaps"
+        android:text="googleMaps"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0E24A3" />
+
+</RelativeLayout>
