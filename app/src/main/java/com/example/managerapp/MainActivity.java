@@ -2,10 +2,15 @@ package com.example.managerapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Debug;
+import android.util.Log;
 import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -19,49 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    /*
-    @Override
-    protected void onActivityResult (int requestCode, int resultCode, Intent data){
-        if (resultCode == RESULT_CANCELED)return;
 
-        //Getting the Avatar Image we show to our users
-        ImageView avatarImage = (ImageView) findViewById(R.id.nba1);
 
-        //Finuring out the correct image
-        String drawableName = "logo11";
-        switch (data.getIntExtra("imageID", R.id.logo1)){
-            case R.id.logo1:
-                drawableName = "logo11";
-                break;
-            case R.id.logo2:
-                drawableName = "logo4";
-                break;
-            case R.id.logo3:
-                drawableName = "logo13";
-                break;
-            case R.id.logo4:
-                drawableName = "logo10";
-                break;
-            case R.id.logo5:
-                drawableName = "logo14";
-                break;
-            case R.id.logo6:
-                drawableName = "logo9";
-                break;
-            case R.id.logo7:
-                drawableName = "logo3";
-                break;
-            case R.id.logo8:
-                drawableName = "logo8";
-                break;
-            case R.id.logo9:
-                drawableName = "logo12";
-                break;
-        }
-        int resID = getResources().getIdentifier(drawableName, "drawable", getPackageName());
-        avatarImage.setImageResource(resID);
-    }
-    */
 
     //affect the role of googleMaps on the design
     public void OnOpenInGoogleMaps(View view) {
@@ -79,10 +43,24 @@ public class MainActivity extends AppCompatActivity {
         startActivity(mapIntent);
     }
 
+
+
 //affect the role of nba1 on the design
     public void OnSetAvatarButton(View view) {
         //Application Context Activity
         Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
         startActivityForResult(intent,0);
     }
+
+// add a link for the welcome page
+    public void OnSetWelcomeButton(View view) {
+          //Application Context Activity
+        EditText adresse = (EditText) findViewById(R.id.editadresse);
+        EditText name = (EditText) findViewById(R.id.editname);
+        if((adresse.getText()!= null)&&(name.getText()!=null)){
+            Intent intent = new Intent(getApplicationContext(), FinalActivity.class);
+            startActivityForResult(intent,0);
+        }
+
+}
 }

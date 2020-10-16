@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Managerapp</string>
+    <string name="finish">Finish</string>
+    <string name="googlemaps">googleMaps</string>
+    <string name="enter_your_adresse_here">Enter your adresse here</string>
+    <string name="your_location">Your location</string>
+    <string name="enter_the_name_of_your_team_here">Enter the name of your team here</string>
+    <string name="name_of_your_team">NAME OF YOUR TEAM</string>
+    <string name="click_on_the_image_to_change_the_avatar_of_your_team">click on the image to change the Avatar of your team</string>
+    <string name="image_of_player_with_the_result_of_a_match_at_the_midle_of_them">image of player with the result of a match at the midle of them</string>
+    <string name="nba_playoff_manager">NBA PLAYOFF MANAGER</string>
+    <string name="charge_from_phone">Charge from phone</string>
+    <string name="a_logo_of_a_team">a logo of a team</string>
+    <string name="select_your_new_avatar">Select your new avatar</string>
+    <string name="logo_of_lions">logo of lions</string>
+    <string name="a_logo_of_munks">a_logo_of_munks</string>
+    <string name="a_logo_of_honnets">a_logo_of_honnets</string>
+    <string name="a_logo_of_neworlean">a_logo_of_neworlean</string>
+    <string name="a_logo_of_crush">a_logo_of_crush</string>
+    <string name="a_logo_of_portland">a_logo_of_portland</string>
+    <string name="a_logo_of_torronto">a_logo_of_torronto</string>
+    <string name="a_logo_of_warrios">a_logo_of_warrios</string>
+    <string name="a_logo_of_lakers">a_logo_of_lakers</string>
 </resources>

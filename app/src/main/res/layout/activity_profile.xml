@@ -17,23 +17,23 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="37dp"
         android:background="#8A4848"
-        android:text="Select your new avatar"
+        android:text="@string/select_your_new_avatar"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <ImageView
         android:id="@+id/logo1"
-        android:onClick="SetTeamIcon1"
         android:layout_width="123dp"
         android:layout_height="123dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="4dp"
         android:layout_marginTop="102dp"
+        android:contentDescription="@string/a_logo_of_lakers"
+        android:onClick="SetTeamIcon1"
         app:srcCompat="@drawable/logo11" />
 
     <ImageView
         android:id="@+id/logo2"
-        android:onClick="SetTeamIcon2"
         android:layout_width="123dp"
         android:layout_height="123dp"
         android:layout_alignParentTop="true"
@@ -41,11 +41,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="146dp"
+        android:contentDescription="@string/a_logo_of_warrios"
+        android:onClick="SetTeamIcon2"
         app:srcCompat="@drawable/logo4" />
 
     <ImageView
         android:id="@+id/logo3"
-        android:onClick="SetTeamIcon3"
         android:layout_width="123dp"
         android:layout_height="123dp"
         android:layout_alignParentStart="true"
@@ -54,11 +55,12 @@
         android:layout_marginStart="280dp"
         android:layout_marginTop="101dp"
         android:layout_marginEnd="6dp"
+        android:contentDescription="@string/a_logo_of_torronto"
+        android:onClick="SetTeamIcon3"
         app:srcCompat="@drawable/logo13" />
 
     <ImageView
         android:id="@+id/logo4"
-        android:onClick="SetTeamIcon4"
         android:layout_width="123dp"
         android:layout_height="123dp"
         android:layout_alignParentEnd="true"
@@ -66,11 +68,12 @@
         android:layout_centerInParent="true"
         android:layout_marginEnd="148dp"
         android:layout_marginBottom="351dp"
+        android:contentDescription="@string/a_logo_of_portland"
+        android:onClick="SetTeamIcon4"
         app:srcCompat="@drawable/logo14" />
 
     <ImageView
         android:id="@+id/logo5"
-        android:onClick="SetTeamIcon5"
         android:layout_width="123dp"
         android:layout_height="123dp"
         android:layout_alignParentEnd="true"
@@ -78,49 +81,55 @@
         android:layout_centerVertical="true"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="350dp"
+        android:contentDescription="@string/a_logo_of_crush"
+        android:onClick="SetTeamIcon5"
         app:srcCompat="@drawable/logo9" />
 
     <ImageView
         android:id="@+id/logo6"
-        android:onClick="SetTeamIcon6"
         android:layout_width="123dp"
         android:layout_height="123dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="4dp"
         android:layout_marginTop="260dp"
+        android:contentDescription="@string/a_logo_of_neworlean"
+        android:onClick="SetTeamIcon6"
         app:srcCompat="@drawable/logo10" />
 
     <ImageView
         android:id="@+id/logo7"
-        android:onClick="SetTeamIcon7"
         android:layout_width="123dp"
         android:layout_height="123dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="6dp"
         android:layout_marginBottom="197dp"
+        android:contentDescription="@string/a_logo_of_honnets"
+        android:onClick="SetTeamIcon7"
         app:srcCompat="@drawable/logo3" />
 
     <ImageView
         android:id="@+id/logo8"
-        android:onClick="SetTeamIcon8"
         android:layout_width="123dp"
         android:layout_height="123dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="200dp"
+        android:contentDescription="@string/a_logo_of_munks"
+        android:onClick="SetTeamIcon8"
         app:srcCompat="@drawable/logo8" />
 
     <ImageView
         android:id="@+id/logo9"
-        android:onClick="SetTeamIcon9"
         android:layout_width="123dp"
         android:layout_height="123dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="201dp"
+        android:contentDescription="@string/logo_of_lions"
+        android:onClick="SetTeamIcon9"
         app:srcCompat="@drawable/logo12" />
 
     <Button
@@ -133,6 +142,6 @@
         android:layout_marginStart="103dp"
         android:layout_marginBottom="95dp"
         android:background="#8A4848"
-        android:text="Charge from phone"
+        android:text="@string/charge_from_phone"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 </RelativeLayout>
