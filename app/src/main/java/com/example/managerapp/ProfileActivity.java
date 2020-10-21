@@ -195,6 +195,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         //Getting the Avatar Image we show to our users
         ImageView avatarImage = (ImageView) findViewById(R.id.nba1);
+        ImageView avatarImageFinal = (ImageView) findViewById(R.id.imageparty);
 
         //Finuring out the correct image
         String drawableName = "logo0";
@@ -229,5 +230,6 @@ public class ProfileActivity extends AppCompatActivity {
         }
         int resID = getResources().getIdentifier(drawableName, "drawable", getPackageName());
         avatarImage.setImageResource(resID);
+        avatarImageFinal.setImageResource(resID);
     }
 }
